@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "434199991677",
+    "project_id": "task1-8a9bc",
+    "storage_bucket": "task1-8a9bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434199991677:android:c295e44bbfc3db1ca82814",
+        "android_client_info": {
+          "package_name": "sumagoinfotech.ipt.task1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434199991677-n4nl1tu3m61pkls7aro0ktf75b3828b0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sumagoinfotech.ipt.task1",
+            "certificate_hash": "872549d2524532270ebc3714c527de40decffbad"
+          }
+        },
+        {
+          "client_id": "434199991677-6cmqe8pmnplvm3q99pidlaemgfrl0s0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAZmxqfU-N97eiNkW8Gy_Y7zRL4dk8WOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434199991677-6cmqe8pmnplvm3q99pidlaemgfrl0s0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

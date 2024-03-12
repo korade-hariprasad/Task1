@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/city_bg"
+    tools:context=".acitivity.MainActivity">
+
+    <eightbitlab.com.blurview.BlurView
+        android:layout_width="300sp"
+        android:layout_height="350sp"
+        android:background="@drawable/blur_bg"
+        app:layout_constraintBottom_toBottomOf="@id/container_glass"
+        app:layout_constraintEnd_toEndOf="@id/container_glass"
+        app:layout_constraintStart_toStartOf="@id/container_glass"
+        app:layout_constraintTop_toTopOf="@id/container_glass"
+        android:layout_margin="20sp"
+        android:id="@+id/blurView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_glass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20sp"
+        android:layout_width="300sp"
+        android:layout_height="350sp">
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/MyTextViewHeadingStyle"
+            android:text="Hello !!" />
+
+        <TextView
+            android:id="@+id/tv_subHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_head"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/MyTextViewSubHeadingStyle"
+            android:textSize="17sp"
+            android:text="@string/subtext" />
+
+        <Button
+            android:id="@+id/btnToSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_subHead"
+            app:layout_constraintEnd_toStartOf="@id/btnToSignUp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/MyButtonStyle"
+            android:text="Sign In" />
+
+        <Button
+            android:id="@+id/btnToSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_subHead"
+            app:layout_constraintStart_toEndOf="@id/btnToSignIn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/MyButtonStyle"
+            android:text="Sing Up" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
